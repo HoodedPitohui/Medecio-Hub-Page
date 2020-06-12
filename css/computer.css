@@ -1,0 +1,15 @@
+/*Nav elements to change*/
+/*Flexbox attributes*/
+html  {
+  scroll-behavior: smooth;
+}
+.flexbox-wrapper1  {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.flex-two {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+}

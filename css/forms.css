@@ -1,0 +1,24 @@
+input.standard {
+  width: 90%;
+  border-bottom: 0.2em solid black;
+}
+form  {
+  display: block;
+  margin-left: 2em;
+}
+textarea  {
+  border: 0.2em solid black;
+  width: 90%;
+}
+.form-buttons {
+  background-color: #FCE181;
+  color: black;
+  padding-top: 1em;
+  padding-left: 1.5em;
+  padding-bottom: 1em;
+  padding-right: 1.5em;
+  border-radius: 0.5em;
+}
+.form-buttons:hover {
+   background-color: #FEF9C7;
+}

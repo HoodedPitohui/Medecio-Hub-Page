@@ -1,0 +1,122 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap";
+/* Does a hard reset of the webpage so the white space at the top is eliminated */
+/* * is fancy HTML5 attribute that selects every element */
+*  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+.flexbox-standard1 {
+  text-align: center;
+  color: black;
+  width: 18em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+.flexbox-standard2 {
+  text-align: center;
+  color: black;
+  width: 18em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  background-color: blue;
+}
+.flexbox-standard2 img {
+   width: 20em;
+}
+.flexbox-wrapper1  {
+  justify-content: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.flex-two  {
+  justify-content: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+.flexbox-wrapper1 img {
+   max-width: 100%;
+}
+/*div.section2-images p {
+  padding-bottom: 60px;
+}*/
+footer  {
+  background-color: #026670;
+  color: #9FEDD7;
+  width: 100%;
+}
+footer  p   {
+  text-align: center;
+}
+footer h3 {
+   color: #9FEDD7;
+}
+footer p.top  {
+  padding-top: 0.5em;
+}
+footer p.bottom {
+  padding-bottom: 0.5em;
+}
+button.swap-button-left, button.swap-button-right {
+   height: 8em;
+   width: 2em;
+   color: white;
+   background-color: black;
+}
+.button-wrapper {
+  text-align: center;
+  color: black;
+  width: 4em;
+  display: block;
+  text-align: center;
+}
+button.swap-button-left {
+  margin-left: 25em;
+}
+button.swap-button-right {
+  margin-right: 25em;
+}
+body {
+   background-color:#EDEAE5;
+}
+.flexbox-standard3-left {
+  color: black;
+  width: 45em;
+}
+.flexbox-standard3-right {
+   color: black;
+   width: 30em;
+   background-color: #FFE082;
+   height: 20em;
+}
+section.mission {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+section.mission button, section.development button {
+   background-color: #9FEDD7;
+   padding: 14px 16px;
+   border-radius: 0.5em;
+}
+section.mission button:hover, section.development button:hover {
+   border: 1px solid black;
+}
+section.development {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}

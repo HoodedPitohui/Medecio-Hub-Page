@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+  <head>
+    <title>Home</title>
+    <!--CSS Links-->
+    <!--Icon Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Own CSS-->
+    <link rel = "stylesheet" href = "../css/general.css"/>
+    <link rel = "stylesheet" href = "../css/navbar.css"/>
+    <link rel = "stylesheet" href = "../css/images.css"/>
+    <link rel = "stylesheet" href = "../css/section.css"/>
+    <link rel = "stylesheet" href = "../css/headings.css"/>
+    <link rel = "stylesheet" href = "../css/forms.css"/>
+    <!--Best way to build media queries is set the base case for mobile, then move up-->
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:720px)" href="../css/computer.css"/>
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:900px)" href="../css/computer-large.css"/>
+		<!--<link rel="stylesheet" type="text/css" media="only screen and (max-width:600px)" href="../css/tablet.css"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--Javascript code-->
+    <script src = "../javascript/forms.js"></script>
+    <script src = "../javascript/scrolling.js"></script><!--This does not work for some reason-->
+    <script src = "../javascript/navbar.js"></script>
+    <script src = "../javascript/swap-images.js"></script>
+  </head>
+  <body>
+    <!--Navbar Structure-->
+    <!--Links to different parts of the page (#s)-->
+    <section id = "home">
+      <div class="topnav" id="myTopnav">
+        <img id = "first-navbar" src = "../images/logo.png" href = "#home" class = ""/>
+        <a href="discourse.medecio.com">Forum</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </section>
+    <!--Section 1-->
+    <section>
+      <h1 class = "standard">Our Forum</h1>
+      <div class = "flexbox-wrapper1">
+        <div class = "flexbox-standard3-left">
+          <p>Our forum provides a platform for users to give lifestyle tips
+          to others. We focus on a variety of topics, from weight-loss to 
+          challenges affecting athletes.</p>
+        </div>
+        <div class = "flexbox-standard3-right">
+          <p>Container for forum feed</p>
+        </div>
+      </div>
+    </section>
+    <!--Section 2-->
+    <section class = "development">
+      <h1>Our Blog</h1>
+      <h3>Still in Progress</h3>
+      <p>We'd appreciate if you could give us feedback on whether you would like a blog service</p>
+      <br/>
+      <button onclick = "window.location.href = '';" type = "button">Tell Us What You Think</button>
+    </section>
+    <br/>
+    <section class = "mission">
+      <h1>Learn About Us</h1>
+      <h3>Our Mission</h3>
+      <p>We want to increase the availability of correct medical information 
+      so people who need lifestyle tips have ready access to them</p>
+      <br/>
+      <button onclick = "window.location.href = 'about.html';" type = "button">Learn About Our Team</button>
+    </section>
+    <!--Section 4-->
+    <section>
+      <br/>
+      <br/>
+      <h1 class = "standard">Contact Us</h1>
+      <br/>
+      <!--Form-->
+      <form id = "contact-form">
+        <div class = "data">
+          <label for = "fname">First name:</label><br/>
+          <input class = "standard" type = "text" id = "fname"><br/>
+          <label for = "lname">Last name:</label><br/>
+          <input class = "standard" type = "text" id = "lname"><br/>
+          <label for= "email">Email:</label><br/>
+          <input class = "standard" type = "text" id = "email"><br/>
+          <label for = "comments">Comments:</label><br/>
+          <textarea id = "comments" name="comment" form = "contact-form" rows="8">
+          </textarea>
+          <br/>
+          <input type = "checkbox" id = "newsletter" checked>
+          <label for = "Subscribe">Subscribe to Monthly Newsletter</label>
+          <br/>
+        </div>
+        <div class = "button">
+          <input class = "form-buttons" type = "button" id = "subscribe" value = "Send"/>
+          <input class = "form-buttons" type = "button" id = "reset" value = "Reset"/>
+        </div>
+      </form>
+    </section>
+    <br/>
+    <!--Footer-->
+    <footer>
+      <img class = "footer" src = "../images/logo.png"/>
+      <div class = "flexbox-wrapper1">
+        <div class = "flexbox-standard1">
+          <h3>Email Us</h3>
+        </div>
+        <div class = "flexbox-standard1">
+          <h3>Our Guidelines</h3>
+        </div>
+        <div class = "flexbox-standard1">
+          <h3>Social Media</h3>
+        </div>
+      </div>
+      <p class = "top">Medecio is a For-Profit Organization</p>
+      <p class = "bottom">Copyright &copy; 2020 Medecio. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+h1.title  {
+  text-align: center;
+}
+h1 {
+  font-weight: 500;
+  font-size: 3em;
+  color: black;
+}
+h1.standard {
+  margin-left: 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 250;
+}
+h3.subtitle {
+  text-align: center;
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: 200;
+}
