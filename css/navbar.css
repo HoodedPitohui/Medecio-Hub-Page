@@ -9,6 +9,7 @@
 .topnav {
   background-color: #026670;
   overflow: hidden;
+  margin-bottom: 0.5em;
 }
 
 /* Style the links inside the navigation bar */
@@ -24,19 +25,23 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #3D9BB9;
-  color: black;
+  border: 1px solid #9FEDD7;
 }
 .topnav img {
-   max-height: 54px;
-   float: left;
-   display: block;
+   height: 17px;
+   margin-left: 1.5em;
+}
+.first-element {
+   padding-top: 4px;
 }
 /* Add an active class to highlight the current page */
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+.first-element {
+   margin-left: 2em;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

@@ -4,7 +4,6 @@ html  {
   scroll-behavior: smooth;
 }
 .flexbox-wrapper1  {
-  display: flex;
   justify-content: center;
   flex-direction: row;
 }
@@ -12,4 +11,7 @@ html  {
    display: flex;
    justify-content: center;
    flex-direction: row;
+}
+.flexbox-standard3-left {
+  width: 45em;
 }

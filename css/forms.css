@@ -1,16 +1,17 @@
 input.standard {
   width: 90%;
-  border-bottom: 0.2em solid black;
+  border-bottom: 0.1em solid black;
 }
 form  {
   display: block;
   margin-left: 2em;
+  margin-top: 0.5em;
 }
 textarea  {
-  border: 0.2em solid black;
+  border: 0.1em solid black;
   width: 90%;
 }
-.form-buttons {
+.form-button-left, .form-button-right {
   background-color: #FCE181;
   color: black;
   padding-top: 1em;
@@ -18,7 +19,14 @@ textarea  {
   padding-bottom: 1em;
   padding-right: 1.5em;
   border-radius: 0.5em;
+  margin-bottom: 1em;
 }
-.form-buttons:hover {
+.form-button-right {
+   margin-left: 2em;
+}
+.form-button-left:hover, .form-button-right:hover {
    background-color: #FEF9C7;
+}
+input[type = "checkbox"] {
+   background-color: blue;
 }

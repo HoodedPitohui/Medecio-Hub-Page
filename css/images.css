@@ -15,9 +15,19 @@ img.centralized  {
    display: inline-block;
 }
 img.footer {
-   padding-top: 14px;
+   padding-top: 1.25em;
    display: block;
    margin-left: auto;
    margin-right: auto;
    max-height:39px;
+   padding-bottom: 0.125em;
+}
+.img-nav {
+   height: 54px;
+   float: left;
+   display: block;
+}
+.img-nav img {
+   padding: 14px 16px;
+   height: 27px;
 }

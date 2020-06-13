@@ -7,7 +7,10 @@ h1 {
   color: black;
 }
 h1.standard {
-  margin-left: 0.5em;
+  margin-left: 0.65em;
+}
+h1.standard2 {
+  margin-left: 0.6em;
 }
 h3 {
   font-size: 1.5em;

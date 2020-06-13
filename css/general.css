@@ -20,7 +20,9 @@
   display: block;
   text-align: center;
 }
-
+.flexbox-standard1 img {
+   height: 1.25em;
+}
 .flexbox-standard2 {
   text-align: center;
   color: black;
@@ -32,12 +34,14 @@
   background-color: blue;
 }
 .flexbox-standard2 img {
-   width: 20em;
+   width: 18em;
 }
 .flexbox-wrapper1  {
   justify-content: center;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  margin-top: 0.5em;
 }
 .flex-two  {
   justify-content: center;
@@ -58,6 +62,7 @@ footer  {
 }
 footer  p   {
   text-align: center;
+  color: #9FEDD7;
 }
 footer h3 {
    color: #9FEDD7;
@@ -68,31 +73,17 @@ footer p.top  {
 footer p.bottom {
   padding-bottom: 0.5em;
 }
-button.swap-button-left, button.swap-button-right {
-   height: 8em;
-   width: 2em;
-   color: white;
-   background-color: black;
-}
-.button-wrapper {
-  text-align: center;
-  color: black;
-  width: 4em;
-  display: block;
-  text-align: center;
-}
-button.swap-button-left {
-  margin-left: 25em;
-}
-button.swap-button-right {
-  margin-right: 25em;
-}
 body {
-   background-color:#EDEAE5;
+   background-color: #EDEAE5;
 }
 .flexbox-standard3-left {
   color: black;
-  width: 45em;
+  width: 30em;
+  margin-left: 0.4em;
+  padding-right: 2em;
+}
+.flexbox-standard3-left p {
+   margin-bottom: 2em;
 }
 .flexbox-standard3-right {
    color: black;
@@ -100,11 +91,16 @@ body {
    background-color: #FFE082;
    height: 20em;
 }
-section.mission {
+section.mission, section.development {
    display: block;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
+   margin-left: 2em;
+   margin-right: 2em;
+}
+section.mission h3, section.development h3 {
+   margin-bottom: 0.5em;
+}
+section.mission p, section.development p {
+   margin-bottom: 1.5em;
 }
 section.mission button, section.development button {
    background-color: #9FEDD7;
@@ -114,9 +110,22 @@ section.mission button, section.development button {
 section.mission button:hover, section.development button:hover {
    border: 1px solid black;
 }
-section.development {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
+footer a {
+   text-decoration: none;
+   color: #9FEDD7;
+}
+p.top {
+   border-top: 0.125em solid #9FEDD7;
+}
+footer a:hover {
+   color: black;
+}
+footer a {
+   margin-bottom: 0.5em;
+}
+.social {
+   margin-bottom: 0.5em;
+}
+p.bottom {
+   margin-bottom: 0.5em;
 }
