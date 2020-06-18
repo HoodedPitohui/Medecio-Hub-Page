@@ -7,7 +7,7 @@
 }*/
 /* Style the navigation menu */
 .topnav {
-  background-color: #026670;
+  background-color: #315F70;
   overflow: hidden;
   margin-bottom: 0.5em;
 }
@@ -16,7 +16,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #9FEDD7;
+  color: #C4B07E;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,14 +25,14 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  border: 1px solid #9FEDD7;
+  border: 1px solid #C4B07E;
 }
 .topnav img {
-   height: 17px;
+   height: 1.2em;
    margin-left: 1.5em;
 }
 .first-element {
-   padding-top: 4px;
+   padding-top: 0px;
 }
 /* Add an active class to highlight the current page */
 

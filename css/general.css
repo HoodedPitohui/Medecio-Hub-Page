@@ -13,10 +13,8 @@
 }
 .flexbox-standard1 {
   text-align: center;
-  color: black;
-  width: 18em;
-  margin-left: auto;
-  margin-right: auto;
+  color: black;   
+  margin-left: 2em;
   display: block;
   text-align: center;
 }
@@ -26,22 +24,23 @@
 .flexbox-standard2 {
   text-align: center;
   color: black;
-  width: 18em;
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center;
-  background-color: blue;
-}
-.flexbox-standard2 img {
-   width: 18em;
 }
 .flexbox-wrapper1  {
-  justify-content: center;
+  margin-right: 2em;
+  display: flex;
+  margin-top: 0.5em;
+  flex-direction: column;
+}
+.flexbox-wrapper2 {
   margin-left: 2em;
   margin-right: 2em;
   display: flex;
   margin-top: 0.5em;
+  flex-direction: column;
 }
 .flex-two  {
   justify-content: center;
@@ -56,16 +55,16 @@
   padding-bottom: 60px;
 }*/
 footer  {
-  background-color: #026670;
-  color: #9FEDD7;
+  background-color: #315F70;
+  color: #C4B07E;
   width: 100%;
 }
 footer  p   {
   text-align: center;
-  color: #9FEDD7;
+  color: #C4B07E;
 }
 footer h3 {
-   color: #9FEDD7;
+   color: #C4B07E;
 }
 footer p.top  {
   padding-top: 0.5em;
@@ -76,21 +75,14 @@ footer p.bottom {
 body {
    background-color: #EDEAE5;
 }
-.flexbox-standard3-left {
-  color: black;
-  width: 30em;
-  margin-left: 0.4em;
-  padding-right: 2em;
-}
 .flexbox-standard3-left p {
    margin-bottom: 2em;
+   margin-left: 2em;
 }
-.flexbox-standard3-right {
-   color: black;
-   width: 30em;
-   background-color: #FFE082;
-   height: 20em;
+.flexbox-standard4-right h3, .flexbox-standard4-right p {
+  margin-bottom: 0.5em;
 }
+
 section.mission, section.development {
    display: block;
    margin-left: 2em;
@@ -103,7 +95,7 @@ section.mission p, section.development p {
    margin-bottom: 1.5em;
 }
 section.mission button, section.development button {
-   background-color: #9FEDD7;
+   background-color: #C4B07E;
    padding: 14px 16px;
    border-radius: 0.5em;
 }
@@ -112,10 +104,10 @@ section.mission button:hover, section.development button:hover {
 }
 footer a {
    text-decoration: none;
-   color: #9FEDD7;
+   color: #C4B07E;
 }
 p.top {
-   border-top: 0.125em solid #9FEDD7;
+   border-top: 0.125em solid #C4B07E;
 }
 footer a:hover {
    color: black;
@@ -128,4 +120,10 @@ footer a {
 }
 p.bottom {
    margin-bottom: 0.5em;
+}
+.flexbox-standard3-left {
+  color: black;
+  width: 30em;
+  margin-left: 0em;
+  padding-right: 2em;
 }

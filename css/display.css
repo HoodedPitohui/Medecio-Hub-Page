@@ -1,0 +1,13 @@
+.avatar {
+  border-radius: 50%;
+}
+#container {
+  white-space: nowrap;
+}
+.post-link {
+  display: inline;
+}
+.metrics {
+  display: inline;
+  white-space: nowrap;
+}

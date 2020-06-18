@@ -12,7 +12,7 @@ textarea  {
   width: 90%;
 }
 .form-button-left, .form-button-right {
-  background-color: #FCE181;
+  background-color: #C4B07E;
   color: black;
   padding-top: 1em;
   padding-left: 1.5em;
@@ -25,7 +25,7 @@ textarea  {
    margin-left: 2em;
 }
 .form-button-left:hover, .form-button-right:hover {
-   background-color: #FEF9C7;
+   border: 0.1em solid black;
 }
 input[type = "checkbox"] {
    background-color: blue;

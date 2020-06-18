@@ -7,11 +7,43 @@ html  {
   justify-content: center;
   flex-direction: row;
 }
+.flexbox-wrapper2  {
+  justify-content: center;
+  flex-direction: row;
+}
 .flex-two {
    display: flex;
    justify-content: center;
    flex-direction: row;
 }
 .flexbox-standard3-left {
-  width: 45em;
+  width: 45em;;
+}
+.flexbox-standard3-left p {
+  width: 45em;;
+  margin-left: 0em;
+}
+.flexbox-standard4-left {
+  color: black;
+  width: 20em;
+  margin-left: 0.4em;
+  padding-right: 2em;
+}
+.flexbox-standard3-right {
+   color: black;
+   width: 25em;
+}
+.flexbox-standard4-right {
+  color: black;
+  width: 50em;
+  margin-right: 2em;
+}
+.flexbox-standard2 img {
+   width: 18em;
+}
+.flexbox-standard2 {
+  width: 18em;  
+}
+.flexbox-standard1 {
+  width: 18em;
 }
