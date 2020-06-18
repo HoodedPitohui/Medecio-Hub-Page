@@ -58,6 +58,7 @@ footer  {
   background-color: #315F70;
   color: #C4B07E;
   width: 100%;
+  margin-left: 0em;
 }
 footer  p   {
   text-align: center;
@@ -126,4 +127,13 @@ p.bottom {
   width: 30em;
   margin-left: 0em;
   padding-right: 2em;
+}
+.flexbox-standard3-left input {
+  margin-left: 2em;
+}
+.flexbox-standard3-right {
+   margin-left: 2em;
+}
+footer {
+   margin-left: 0em;
 }

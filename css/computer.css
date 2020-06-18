@@ -21,7 +21,7 @@ html  {
 }
 .flexbox-standard3-left p {
   width: 45em;;
-  margin-left: 0em;
+  margin-left: 1em;
 }
 .flexbox-standard4-left {
   color: black;
@@ -46,4 +46,7 @@ html  {
 }
 .flexbox-standard1 {
   width: 18em;
+}
+.flexbox-standard3-left input {
+   margin-left: 1em;
 }
