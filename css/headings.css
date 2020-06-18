@@ -23,3 +23,13 @@ h4 {
 h3.default {
   margin-left: 1em;
 }
+h2 {
+   font-size: 2em;
+   font-weight: 400;
+}
+h2.standard {
+   margin-left: 0.5em;
+}
+h1.standard3 {
+   margin-left: 0.6em;
+}

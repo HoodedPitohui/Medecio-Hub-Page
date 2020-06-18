@@ -1,13 +1,44 @@
 .avatar {
   border-radius: 50%;
 }
-#container {
-  white-space: nowrap;
+#general-container {
+}
+
+#link-container {
+  display: inline;
+  vertical-align: top;
+}
+#img-container {
+  display: inline;
 }
 .post-link {
-  display: inline;
+  margin-left: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-family: Poppins, sans-serif;
 }
-.metrics {
-  display: inline;
-  white-space: nowrap;
+.post-link:hover {
+  text-decoration: none;
+  color: black;
+  font-family: Poppins, sans-serif;
+  border-bottom: 0.1em solid black;
+}
+#metrics {
+  font-family: Poppins, sans-serif;
+}
+
+#container1 {
+  border-radius: 5px;
+  border-color: black;
+  border-style: dotted;
+}
+#container2 {
+  border-radius: 5px;
+  border-color: black;
+  border-style: dotted;
+}
+#container3 {
+  border-radius: 5px;
+  border-color: black;
+  border-style: dotted;
 }

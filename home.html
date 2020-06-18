@@ -20,14 +20,13 @@
     <!--Javascript code-->
     <script src = "javascript/forms.js"></script>
     <script src = "javascript/navbar.js"></script>
-    <script src = "javascript/forumFeed.js"></script>
   </head>
   <body onload="loadFeed(60)">
     <!--Navbar Structure-->
     <!--Links to different parts of the page (#s)-->
     <section id = "home">
       <div class="topnav" id="myTopnav">
-        <a href = "index.html"><img id = "first-navbar" src = "images/logo-old.png" href = "index.html" class = "first-element"/></a>
+        <a href = "home.html"><img id = "first-navbar" src = "images/combinationv2.png" href = "index.html" class = "first-element"/></a>
         <a href="https://discourse.medecio.com/">Forum</a>
         <a href="webpage/blog.html">Blogs</a>
         <a href="webpage/about.html">About</a>
@@ -41,6 +40,7 @@
       <h1 class = "standard2">Our Forum</h1>
       <div class = "flexbox-wrapper1">
         <div class = "flexbox-standard3-left">
+          <h2 class = "standard">Description</h2>
           <p>Medecio's online forum is a free, crowdsourced online service that enables patients to share medical experiences and information.
           To improve the medical accuracy of the information exchanged on the platform, Medecio has a professional moderation team that
           reviews any shared information. To learn more about the forum, visit our various pages and sign up today!</p>
@@ -49,8 +49,58 @@
         </div>
         <div class = "flexbox-standard3-right">
           <h2>Feed</h2>
-          <div id="container"></div>
-          <p>It was taken from the forum!</p>
+          <script type="text/javascript">
+    //calls the request from the website, and checks if it returns anything
+    function loadFeed(size) {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          retrieveInfo(this, size);
+        }
+      };
+      xmlhttp.open("GET", "https://discourse.medecio.com/top.json", true);
+      xmlhttp.send();
+    }
+    //this retrieves the items from the JSON file and assigns them to variables
+    function retrieveInfo(xml, size) {
+      var doc = xml.responseXML;
+      var postsInfo = JSON.parse(xml.responseText);
+      var i;
+      console.log(postsInfo)
+      for (i = 1; i <= 2; i++) {
+          var postId = postsInfo.topic_list.topics[i-1].id;
+          var categoryId = postsInfo.topic_list.topics[i].category_id;
+          var postSlug = postsInfo.topic_list.topics[i].slug;
+          var poster = postsInfo.topic_list.topics[i].posters[0].user_id;
+          var avatar = "";
+          var like_count = postsInfo.topic_list.topics[i].like_count;
+          var view_count = postsInfo.topic_list.topics[i].views;
+
+          // var replies = myArr.topic_list.topics[i].posts_count+myArr.topic_list.topics[i].reply_count-1;
+          // var dateCreated = new Date(myArr.topic_list.topics[i].created_at);
+          // var whenPosted = Math.round(((new Date()).getTime() - dateCreated.getTime())/(1000*60*60*24));
+
+          for (j in postsInfo.users) {
+            if(postsInfo.users[j].id == poster) {
+              avatar = postsInfo.users[j].avatar_template;
+              var index = avatar.indexOf("{size}")
+              avatar = avatar.substring(0, index) + size + avatar.substring(index+6);
+
+            }
+          }
+          //this is where the html is added to the inner html of the div block, the img has the "avatar" class, the link has the "post-link" class and the likes is just temporarily a paragraph,
+          //all with breaks in between
+          document.getElementById("general-container").innerHTML +=
+            '<div id=\"container'+i+'\"><div id=\"img-container\"><img class=\"avatar\" src=\"https://discourse.medecio.com' + avatar + '\"></div>' +
+            '<div id=\"link-container\"><a href=\'https://discourse.medecio.com/t/' + postSlug + '/' + postId + '/' + categoryId + '\' class=\"post-link\">' + postsInfo.topic_list.topics[i].title + '</a></div>' +
+            '<div id=\"metrics\"> Likes: ' + like_count +
+            ' Views: ' + view_count + '</div><br></div>';
+      }
+    }
+
+      </script>
+          <div id="general-container">
+          </div>
         </div>
       </div>
     </section>
@@ -59,7 +109,15 @@
       <h1>Our Blog</h1>
       <h3>Still in Progress</h3>
       <p>We'd appreciate if you could give us feedback on whether you would like a blog service</p>
-      <button onclick = "window.location.href = 'https://forms.gle/v3pdFwypvz7q4SPK8';" type = "button">Tell Us What You Think</button>
+      <div class = "flexbox-wrapper1">
+        <div class = "flexbox-standard3-left">
+          <img src = "images/medecio-information.png" id = "left-image"/>
+        </div>
+        <div class = "flexbox-standard3-right">
+          <img src = "images/medecio-blog.png" id = "right-image"/>
+        </div>
+      </div>
+      <button onclick = "window.location.href = 'https://forms.gle/v3pdFwypvz7q4SPK8';" type = "button" id = "blog-button">Tell Us What You Think</button>
     </section>
     <section class = "mission">
       <h1>Learn About Us</h1>
@@ -67,6 +125,20 @@
       <p>Medecio is an online platform that is working towards providing safe and reliable medical and lifestyle information to the general public.
       We believe that the sharing of personal experiences serves as the basis for a community-driven collaborative effort to better spread
       medical awareness and provide assistance.</p>
+      <div class = "flexbox-wrapper5">
+        <div class = "threecol-flex">
+          <img src = "images/community.png"/>
+          <h3>Community Driven</h3>
+        </div>
+        <div class = "threecol-flex">
+          <img src = "images/medicine.png"/>
+          <h3>Beyond the Clinic Information</h3>
+        </div>
+        <div class = "threecol-flex">
+          <img src = "images/topics.png"/>
+          <h3>Professionally Moderated</h3>
+        </div>
+      </div>
       <button onclick = "window.location.href = 'webpage/about.html';" type = "button">Learn About Our Team</button>
     </section>
     <!--Section 4-->
@@ -94,7 +166,7 @@
     </section>
     <!--Footer-->
     <footer>
-      <img class = "footer" src = "images/logo-old.png"/>
+      <img class = "footer" src = "images/combinationv2.png"/>
       <div class = "flexbox-wrapper1">
         <div class = "flexbox-standard1">
           <h3>Email Us</h3>

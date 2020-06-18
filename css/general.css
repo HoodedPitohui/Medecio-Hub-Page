@@ -73,9 +73,6 @@ footer p.top  {
 footer p.bottom {
   padding-bottom: 0.5em;
 }
-body {
-   background-color: #EDEAE5;
-}
 .flexbox-standard3-left p {
    margin-bottom: 2em;
    margin-left: 2em;
@@ -88,6 +85,7 @@ section.mission, section.development {
    display: block;
    margin-left: 2em;
    margin-right: 2em;
+   text-align: center;
 }
 section.mission h3, section.development h3 {
    margin-bottom: 0.5em;
@@ -136,4 +134,24 @@ p.bottom {
 }
 footer {
    margin-left: 0em;
+}
+.threecol-flex {
+  text-align: center;
+  color: black;
+  width: 400px;
+}
+.flexbox-wrapper5  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#right-image {
+ height: 10em;    
+ border: 0.1em solid black;
+}
+#blog-button {
+   margin-left: 0em;
+}
+#left-image {
+   border: 0.1em solid black;
 }
