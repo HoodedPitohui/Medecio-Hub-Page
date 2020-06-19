@@ -17,11 +17,16 @@ html  {
    flex-direction: row;
 }
 .flexbox-standard3-left {
-  width: 45em;;
+  width: 45em;
+  margin-left: 3em;
 }
 .flexbox-standard3-left p {
   width: 45em;;
-  margin-left: 1em;
+  margin-left: 0em;
+}
+.flexbox-standard3-left p {
+  width: 45em;;
+  margin-right: 1em;
 }
 .flexbox-standard4-left {
   color: black;
@@ -47,9 +52,9 @@ html  {
 .flexbox-standard1 {
   width: 18em;
 }
-.flexbox-standard3-left input {
-   margin-left: 1em;
-}
 .flexbox-wrapper5  {
   flex-direction: row;
+}
+h2.standard {
+   margin-left: 0.5em;
 }

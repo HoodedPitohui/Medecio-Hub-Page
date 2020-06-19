@@ -30,3 +30,6 @@ textarea  {
 input[type = "checkbox"] {
    background-color: blue;
 }
+.form-button-left {
+   margin-left: 0em;
+}

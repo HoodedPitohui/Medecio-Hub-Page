@@ -3,14 +3,14 @@ h1.title  {
 }
 h1 {
   font-weight: 500;
-  font-size: 3em;
+  font-size: 5em;
   color: black;
 }
 h1.standard2 {
   margin-left: 0.6em;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: 250;
 }
 h3.subtitle {
@@ -24,12 +24,40 @@ h3.default {
   margin-left: 1em;
 }
 h2 {
-   font-size: 2em;
+   font-size: 4em;
    font-weight: 400;
 }
 h2.standard {
-   margin-left: 0.5em;
+   margin-left: 1em;
 }
 h1.standard3 {
    margin-left: 0.6em;
+}
+p {
+   font-size: 1.1em;
+}
+h1 {
+  font-weight: 500;
+  font-size: 5em;
+  color: black;
+}
+h2 {
+   font-size: 4em;
+   font-weight: 400;
+}
+h3 {
+  font-size: 3em;
+  font-weight: 300;
+}
+h4 {
+  font-size: 2.5em;
+  font-weight: 250;
+}
+h5 {
+   font-size: 2em;
+   font-weight: 150;
+}
+h6 {
+   font-size: 1.5em;
+   font-weight: 100;
 }

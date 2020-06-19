@@ -64,7 +64,7 @@ footer  p   {
   text-align: center;
   color: #C4B07E;
 }
-footer h3 {
+footer h6 {
    color: #C4B07E;
 }
 footer p.top  {
@@ -83,8 +83,6 @@ footer p.bottom {
 
 section.mission, section.development {
    display: block;
-   margin-left: 2em;
-   margin-right: 2em;
    text-align: center;
 }
 section.mission h3, section.development h3 {
@@ -126,9 +124,6 @@ p.bottom {
   margin-left: 0em;
   padding-right: 2em;
 }
-.flexbox-standard3-left input {
-  margin-left: 2em;
-}
 .flexbox-standard3-right {
    margin-left: 2em;
 }
@@ -154,4 +149,8 @@ footer {
 }
 #left-image {
    border: 0.1em solid black;
+}
+.mission p {
+   margin-left: 2em;
+   margin-right: 2em;
 }
