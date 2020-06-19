@@ -7,7 +7,7 @@ h1 {
   color: black;
 }
 h1.standard2 {
-  margin-left: 0.6em;
+  text-align: center;
 }
 h3 {
   font-size: 3em;
@@ -38,23 +38,23 @@ p {
 }
 h1 {
   font-weight: 500;
-  font-size: 5em;
+  font-size: 4em;
   color: black;
 }
 h2 {
-   font-size: 4em;
+   font-size: 3em;
    font-weight: 400;
 }
 h3 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 300;
 }
 h4 {
-  font-size: 2.5em;
+  font-size: 2.0em;
   font-weight: 250;
 }
 h5 {
-   font-size: 2em;
+   font-size: 1.75em;
    font-weight: 150;
 }
 h6 {

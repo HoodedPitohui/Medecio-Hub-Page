@@ -54,6 +54,10 @@ img.footer {
    background-image: url('../images/knowledge.jpg');
    background-size: cover;
 }
+.container2 .bg3 {
+   background-size: cover;
+   background-image: url('../image/plantv2.jpg');
+}
 .content p, .content h1, .content h3 {
    
 }
