@@ -21,6 +21,7 @@
     <script src = "javascript/forms.js"></script>
     <script src = "javascript/navbar.js"></script>
     <script src = "javascript/function.js"></script>
+    <script src = "javascript/forumFeed.js"></script>
   </head>
   <body onload="loadFeed(60)" id = "fullpage">
     <!--Navbar Structure-->
@@ -48,60 +49,10 @@
                 <input class = "form-button-left" type = "button" value = "Sign Up" onclick = "window.location.href = 'https://discourse.medecio.com/signup';"/>
                 <input class = "form-button-right" type = "button" value = "Login" onclick = "window.location.href = 'https://discourse.medecio.com/login';"/>
               </div>
-            <div class = "flexbox-standard3-right">
-              <h3>Feed</h3>
-              <script type="text/javascript">
-    //calls the request from the website, and checks if it returns anything
-    function loadFeed(size) {
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          retrieveInfo(this, size);
-        }
-      };
-      xmlhttp.open("GET", "https://discourse.medecio.com/top.json", true);
-      xmlhttp.send();
-    }
-    //this retrieves the items from the JSON file and assigns them to variables
-    function retrieveInfo(xml, size) {
-      var doc = xml.responseXML;
-      var postsInfo = JSON.parse(xml.responseText);
-      var i;
-      console.log(postsInfo)
-      for (i = 1; i <= 2; i++) {
-          var postId = postsInfo.topic_list.topics[i-1].id;
-          var categoryId = postsInfo.topic_list.topics[i].category_id;
-          var postSlug = postsInfo.topic_list.topics[i].slug;
-          var poster = postsInfo.topic_list.topics[i].posters[0].user_id;
-          var avatar = "";
-          var like_count = postsInfo.topic_list.topics[i].like_count;
-          var view_count = postsInfo.topic_list.topics[i].views;
-
-          // var replies = myArr.topic_list.topics[i].posts_count+myArr.topic_list.topics[i].reply_count-1;
-          // var dateCreated = new Date(myArr.topic_list.topics[i].created_at);
-          // var whenPosted = Math.round(((new Date()).getTime() - dateCreated.getTime())/(1000*60*60*24));
-
-          for (j in postsInfo.users) {
-            if(postsInfo.users[j].id == poster) {
-              avatar = postsInfo.users[j].avatar_template;
-              var index = avatar.indexOf("{size}")
-              avatar = avatar.substring(0, index) + size + avatar.substring(index+6);
-
-            }
-          }
-          //this is where the html is added to the inner html of the div block, the img has the "avatar" class, the link has the "post-link" class and the likes is just temporarily a paragraph,
-          //all with breaks in between
-          document.getElementById("general-container").innerHTML +=
-            '<div id=\"container'+i+'\"><div id=\"img-container\"><img class=\"avatar\" src=\"https://discourse.medecio.com' + avatar + '\"></div>' +
-            '<div id=\"link-container\"><a href=\'https://discourse.medecio.com/t/' + postSlug + '/' + postId + '/' + categoryId + '\' class=\"post-link\">' + postsInfo.topic_list.topics[i].title + '</a></div>' +
-            '<div id=\"metrics\"> Likes: ' + like_count +
-            ' Views: ' + view_count + '</div><br></div>';
-      }
-    }
-
-                  </script>
+              <div class = "flexbox-standard3-right">
+                <h3>Feed</h3>
                   <div id="general-container">
-                </div>
+                  </div>
               </div>
             </div>
         </section>

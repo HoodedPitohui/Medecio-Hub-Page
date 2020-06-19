@@ -5,40 +5,86 @@
 }
 
 #link-container {
-  display: inline;
+  display: inline-block;
   vertical-align: top;
+  position: absolute;
+  margin-top: 0.6em;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  color: #315F70;
+  font-weight: 600;
+  white-space: nowrap;
 }
 #img-container {
-  display: inline;
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 0.25em;
 }
 .post-link {
-  margin-left: 0.5em;
   text-decoration: none;
   color: black;
   font-family: Poppins, sans-serif;
-}
-.post-link:hover {
-  text-decoration: none;
-  color: black;
-  font-family: Poppins, sans-serif;
-  border-bottom: 0.1em solid black;
 }
 #metrics {
   font-family: Poppins, sans-serif;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  top: -0.75em;
 }
 
+#container1:hover {
+  margin-left: 0.35em;
+  transition: ease-in 0.25s;
+  background-color: #EEEEEE;
+}
 #container1 {
-  border-radius: 5px;
-  border-color: black;
-  border-style: dotted;
+  padding-top: 0.3em;
+  border-top: 0.2em solid #E5E5E5;
+  margin-left: 0px;
+  transition: ease-out 0.25s;
+}
+#container2:hover {
+  margin-left: 0.35em;
+  transition: ease-in 0.25s;
+  background-color: #EEEEEE;
 }
 #container2 {
-  border-radius: 5px;
-  border-color: black;
-  border-style: dotted;
+  border-top: 0.1em solid #E5E5E5;
+  padding-top: 0.4em;
+  margin-left: 0px;
+  transition: ease-out 0.25s;
+}#container3:hover {
+  margin-left: 0.35em;
+  transition: ease-in 0.25s;
+  background-color: #EEEEEE;
 }
 #container3 {
-  border-radius: 5px;
-  border-color: black;
-  border-style: dotted;
+  border-top: 0.1em solid #E5E5E5;
+  padding-top: 0.4em;
+  margin-left: 0px;
+  transition: ease-out 0.25s;
+}#container4:hover {
+  margin-left: 0.35em;
+  transition: ease-in 0.25s;
+  background-color: #EEEEEE;
+}
+#container4 {
+  border-top: 0.1em solid #E5E5E5;
+  padding-top: 0.4em;
+  margin-left: 0px;
+  transition: ease-out 0.25s;
+}#container5:hover {
+  margin-left: 0.35em;
+  transition: ease-in 0.25s;
+  background-color: #EEEEEE;
+}
+#container5 {
+  border-top: 0.1em solid #E5E5E5;
+  padding-top: 0.4em;
+  margin-left: 0px;
+  transition: ease-out 0.25s;
+  padding-bottom: -1em;
+  border-bottom: 0.2em solid #E5E5E5;
+
 }
