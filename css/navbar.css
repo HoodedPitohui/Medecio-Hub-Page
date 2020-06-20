@@ -29,7 +29,6 @@
 }
 .topnav img {
    height: 1.3em;
-   margin-left: 4em;
 }
 .first-element {
    padding-top: 0px;
@@ -39,9 +38,6 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
-}
-.first-element {
-   margin-left: 2em;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

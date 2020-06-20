@@ -64,3 +64,10 @@ h2.standard {
 .flexbox-standard3-left .form-button-left {
    margin-left: 0em;
 }
+.first-element {
+   margin-left: 4em;
+}
+h1.standard2 {
+  margin-left: 2em;
+  margin-right: 2em;
+}
