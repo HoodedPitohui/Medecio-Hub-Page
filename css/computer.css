@@ -21,11 +21,11 @@ html  {
   margin-left: 5em;
 }
 .flexbox-standard3-left p {
-  width: 45em;;
+  width: 45em;
   margin-left: 0em;
 }
 .flexbox-standard3-left p {
-  width: 30em;;
+  width: 30em;
   margin-right: 1em;
 }
 .flexbox-standard4-left {
@@ -57,4 +57,10 @@ html  {
 }
 h2.standard {
    margin-left: 0.5em;
+}
+.flexbox-standard3-left h3 {
+   margin-left: 0em;
+}
+.flexbox-standard3-left .form-button-left {
+   margin-left: 0em;
 }

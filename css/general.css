@@ -77,6 +77,13 @@ footer p.bottom {
    margin-bottom: 2em;
    margin-left: 2em;
 }
+.flexbox-standard3-left h3 {
+   margin-left: 0.8em;
+}
+.flexbox-standard3-left .form-button-left {
+   margin-left: 2em;
+}
+
 .flexbox-standard4-right h3, .flexbox-standard4-right p {
   margin-bottom: 0.5em;
 }
@@ -153,4 +160,16 @@ footer {
 .mission p {
    margin-left: 4em;
    margin-right: 4em;
+}
+html {
+   scroll-snap-type: y proximity;
+   scroll-behavior: smooth;
+}
+section {
+   scroll-snap-align: start;
+}
+.threecol-flex {
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
 }

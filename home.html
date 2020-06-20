@@ -22,6 +22,16 @@
     <script src = "javascript/navbar.js"></script>
     <script src = "javascript/function.js"></script>
     <script src = "javascript/forumFeed.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163188688-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163188688-1');
+  </script>
+  <script data-ad-client="ca-pub-7260728594298441" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
   <body onload="loadFeed(60)" id = "fullpage">
     <!--Navbar Structure-->
@@ -51,8 +61,8 @@
               </div>
               <div class = "flexbox-standard3-right">
                 <h3>Feed</h3>
-                  <div id="general-container">
-                  </div>
+                <div id="general-container">
+                </div>
               </div>
             </div>
         </section>
@@ -113,28 +123,30 @@
           </div>
         </section>
       <!--Footer-->
-    <footer>
-      <img class = "footer" src = "images/combinationv2.png"/>
-      <div class = "flexbox-wrapper1">
-        <div class = "flexbox-standard1">
-          <h6>Email Us</h6>
-          <a href="mailto:contact@test.com">medeciohealth@gmail.com</a>
+    <section>
+      <footer>
+        <img class = "footer" src = "images/combinationv2.png"/>
+        <div class = "flexbox-wrapper1">
+          <div class = "flexbox-standard1">
+            <h6>Email Us</h6>
+            <a href="mailto:contact@test.com">medeciohealth@gmail.com</a>
+          </div>
+          <div class = "flexbox-standard1">
+            <h6>Our Guidelines</h6>
+            <a href = "https://discourse.medecio.com/tos">Terms of Conditions</a><br/>
+            <a href = "https://discourse.medecio.com/privacy">Privacy Policy</a><br/>
+            <a href = "https://discourse.medecio.com/faq">FAQs</a>
+          </div>
+          <div class = "flexbox-standard1">
+            <h6>Social Media</h6>
+            <a class = "social" href = "https://www.facebook.com/Medecio-Health-105297557790316/"><img src = "images/facebook2.png"/></a>
+            <a class = "social" href = "https://www.instagram.com/medecio.health/"><img src = "images/instagram.png"/></a>
+            <a class = "social" href = "https://www.linkedin.com/company/42282201"><img src = "images/linkedIn.png"/></a>
+          </div>
         </div>
-        <div class = "flexbox-standard1">
-          <h6>Our Guidelines</h6>
-          <a href = "https://discourse.medecio.com/tos">Terms of Conditions</a><br/>
-          <a href = "https://discourse.medecio.com/privacy">Privacy Policy</a><br/>
-          <a href = "https://discourse.medecio.com/faq">FAQs</a>
-        </div>
-        <div class = "flexbox-standard1">
-          <h6>Social Media</h6>
-          <a class = "social" href = "https://www.facebook.com/Medecio-Health-105297557790316/"><img src = "images/facebook2.png"/></a>
-          <a class = "social" href = "https://www.instagram.com/medecio.health/"><img src = "images/instagram.png"/></a>
-          <a class = "social" href = "https://www.linkedin.com/company/42282201"><img src = "images/linkedIn.png"/></a>
-        </div>
-      </div>
-      <p class = "top">Medecio is a For-Profit Organization</p>
-      <p class = "bottom">Copyright &copy; 2020 Medecio. All Rights Reserved</p>
-    </footer>
+        <p class = "top">Medecio is a For-Profit Organization</p>
+        <p class = "bottom">Copyright &copy; 2020 Medecio. All Rights Reserved</p>
+      </footer>
+    </section>
   </body>
 </html>
