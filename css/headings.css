@@ -61,3 +61,9 @@ h6 {
    font-size: 1.5em;
    font-weight: 100;
 }
+p {
+  font-size: 18px;
+}
+input {
+  font-size: 18px;
+}

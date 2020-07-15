@@ -13,7 +13,7 @@
 }
 .flexbox-standard1 {
   text-align: center;
-  color: black;   
+  color: black;
   margin-left: 2em;
   display: block;
   text-align: center;
@@ -148,7 +148,7 @@ footer {
   flex-direction: column;
 }
 #right-image {
- height: 10em;    
+ height: 10em;
  border: 0.1em solid black;
 }
 #blog-button {
@@ -172,4 +172,12 @@ section {
    margin-left: auto;
    margin-right: auto;
    display: block;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+footer:after {
+  clear: both;
 }

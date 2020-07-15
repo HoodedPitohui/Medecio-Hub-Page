@@ -4,3 +4,17 @@ section {
 section.about-us {
    margin-left: 4em;
 }
+section:before, section:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+section:after {
+  clear: both;
+}
+/*section {
+  font-size: 0;
+}
+div {
+
+}
